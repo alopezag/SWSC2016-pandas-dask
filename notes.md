@@ -19,3 +19,25 @@ Job ID                  Username    Queue    Jobname          SessID  NDS   TSK 
 - Connect to the jupyter notebook (http://hod.readthedocs.io/en/latest/Connecting_to_web_UIs.html)
   +  `ssh -L 8887:localhost:8888 node2443.golett.gent.vsc`
 - git clone this repo
+
+
+### Scripts
+
+
+**job.sh**
+```bash
+#!/bin/bash
+#PBS -l nodes=2:ppn=all
+#PBS -l walltime=8:0:0
+#PBS -W x=FLAGS:ADVRES:pandas.204
+
+# load modules for IPython, pandas, dask, ...
+source /apps/gent/tutorials/pandas_dask/modules.sh
+
+# see https://ipywidgets.readthedocs.io/en/latest/user_install.html
+jupyter nbextension install --py --user widgetsnbextension
+jupyter nbextension enable --py --user widgetsnbextension
+
+jupyter notebook --no-browser
+```
+
