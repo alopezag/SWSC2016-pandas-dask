@@ -41,3 +41,19 @@ jupyter nbextension enable --py --user widgetsnbextension
 jupyter notebook --no-browser
 ```
 
+**modules.sh**
+```bash 
+echo "loading modules..."
+module load bokeh/0.12.3-intel-2016b-Python-3.5.2
+module load dask/0.12.0-intel-2016b-Python-3.5.2
+module load distributed/1.14.3-intel-2016b-Python-3.5.2
+module load IPython/5.1.0-intel-2016b-Python-3.5.2
+module load matplotlib/1.5.2-intel-2016b-Python-3.5.2
+module load pandas/0.19.1-intel-2016b-Python-3.5.2
+module load PyTables/3.3.0-intel-2016b-Python-3.5.2
+module load h5py/2.6.0-intel-2016b-Python-3.5.2-HDF5-1.8.17
+module load Pillow/3.4.2-intel-2016b-Python-3.5.2-freetype-2.6.5
+module load Graphviz/2.38.0-intel-2016b
+module load graphviz/0.5.1-intel-2016b-Python-3.5.2
+module list
+```
