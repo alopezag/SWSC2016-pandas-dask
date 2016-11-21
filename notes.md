@@ -24,7 +24,7 @@ Job ID                  Username    Queue    Jobname          SessID  NDS   TSK 
 ### Scripts
 
 
-**job.sh**
+**job.sh** (/apps/gent/tutorials/pandas_dask/job.sh)
 ```bash
 #!/bin/bash
 #PBS -l nodes=2:ppn=all
@@ -41,7 +41,7 @@ jupyter nbextension enable --py --user widgetsnbextension
 jupyter notebook --no-browser
 ```
 
-**modules.sh**
+**modules.sh** (/apps/gent/tutorials/pandas_dask/modules.sh)
 ```bash 
 echo "loading modules..."
 module load bokeh/0.12.3-intel-2016b-Python-3.5.2
