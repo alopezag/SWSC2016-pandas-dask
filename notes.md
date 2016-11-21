@@ -1,7 +1,8 @@
 ## Setting-up
 
 - Connect with the HPC (ssh vsc40xxx@login.hpc.ugent.be)
-- Switch cluster (ml swap cluster/golett)
+- Switch cluster 
+  + `ml swap cluster/golett`
 - Start a job for this workshop (
   + `qsub /apps/gent/tutorials/pandas_dask/job.sh` This will load the needed modules and start a jupyter notebook at port 8888
   + check the job `qstat -n` and look up for the target node `node2443` were jupyter is running:
