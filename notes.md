@@ -1,6 +1,7 @@
 ## Setting-up
 
-- Connect with the HPC (ssh vsc40xxx@login.hpc.ugent.be)
+- Connect with the HPC 
+  + `ssh vsc40xxx@login.hpc.ugent.be`
 - Switch cluster 
   + `ml swap cluster/golett`
 - Start a job for this workshop (
@@ -17,7 +18,7 @@ Job ID                  Username    Queue    Jobname          SessID  NDS   TSK 
   ```
 
 - Connect to the jupyter notebook (http://hod.readthedocs.io/en/latest/Connecting_to_web_UIs.html)
-  +  `ssh -L 8887:localhost:8888 node2443.golett.gent.vsc`
+  +  `ssh -L 8887:localhost:8888 node2443.golett.gent.vsc` Port forward at the local computer
 - git clone this repo (in the cluster)
   + `git clone https://github.com/jorisvandenbossche/SWSC2016-pandas-dask.git`
 
