@@ -6,7 +6,7 @@
   + `ml swap cluster/golett`
 - Start a job for this workshop (
   + `qsub /apps/gent/tutorials/pandas_dask/job.sh` This will load the needed modules and start a jupyter notebook at port 8888
-  + check the job `qstat -n` and look up for the target node `node2443` were jupyter is running:
+  + Check the job (`qstat -n`) and look up for the target node (e.g. `node2xxx`) were jupyter is running:
 
 ```
   master19.golett.gent.vsc: 
@@ -18,7 +18,8 @@ Job ID                  Username    Queue    Jobname          SessID  NDS   TSK 
   ```
 
 - Connect to the jupyter notebook (http://hod.readthedocs.io/en/latest/Connecting_to_web_UIs.html)
-  +  `ssh -L 8887:localhost:8888 node2443.golett.gent.vsc` Port forward at the local computer
+  +  `ssh -L 8887:localhost:8888 node2443.golett.gent.vsc` Port forward (local computer)
+  + Open a browser http://localhost:8887
 - git clone this repo (in the cluster)
   + `git clone https://github.com/jorisvandenbossche/SWSC2016-pandas-dask.git`
 
